@@ -5,6 +5,34 @@ public class ScotiabankData {
     private String password;
     private String successMessage;
     private String errorMessage;
+    private String cardNumber;
+    private String amount;
+    private String lastMessage;
+
+    public String getLastMessage() {
+        return lastMessage;
+    }
+
+    public void setLastMessage(String lastMessage) {
+        this.lastMessage = lastMessage;
+    }
+
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
+    }
 
     public String getUsername() {
         return username;

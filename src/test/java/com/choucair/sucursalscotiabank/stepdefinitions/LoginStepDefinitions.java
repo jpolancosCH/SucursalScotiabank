@@ -38,6 +38,6 @@ public class LoginStepDefinitions {
 
     @Then("^I should see the error message$")
     public void iShouldSeeTheErrorMessage(List<ScotiabankData> scotiabankData) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginFailed.toThe(scotiabankData.get(0).getErrorMessage())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginFailed.toThe(scotiabankData.get(0).getLastMessage())));
     }
 }

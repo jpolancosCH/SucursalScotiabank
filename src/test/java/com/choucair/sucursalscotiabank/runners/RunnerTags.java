@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features",
-        tags = "@failed_login",
+        tags = "@successful_payment_entering_amount",
         glue = "com.choucair.sucursalscotiabank.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 public class RunnerTags {
